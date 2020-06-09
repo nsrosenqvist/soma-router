@@ -1,19 +1,18 @@
 {
-    "name": "nsrosenqvist/soma-cache",
+    "name": "nsrosenqvist/soma-router",
     "type": "library",
     "license": "MIT",
-    "description": "The Symfony Cache module for the Soma framework",
-    "homepage": "https://github.com/nsrosenqvist/soma-cache",
+    "description": "League Route for the SOMA framework",
+    "homepage": "https://github.com/nsrosenqvist/soma-router",
     "autoload": {
         "psr-4": {
-            "NSRosenqvist\\Soma\\Cache\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+            "NSRosenqvist\\Soma\\Router\\": "src/"
+        }
     },
     "require": {
-        "php": ">=7.0.0",
-        "symfony/cache": "^4.4"
+        "php": ">=7.1.0",
+        "league/route": "^4.3",
+        "laminas/laminas-diactoros": "^2.3",
+        "laminas/laminas-httphandlerrunner": "^1.1"
     }
 }
